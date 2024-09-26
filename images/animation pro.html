@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <style>
+            /*
+            div{
+                width: 100px;
+                height: 100px;
+                background: lightblue;
+                transition-property: background-color;
+                transition-duration: 1s;
+                transition-delay: 0.5s;
+
+                -webkit-transition-property: background-color;
+                -webkit-transition-duration: 1s;
+                -webkit-transition-delay: 0.5s;
+            }
+            div:hover{
+                background-color: brown;
+            }
+                */
+            
+/*
+            p{
+                font-size: 20px;
+            }
+            .first{
+                width: 150px;
+                height: 150px;
+                background-color: lightblue;
+                transition-property: width;
+                transition-duration: 1s;
+                transition-delay: initial;
+
+                -webkit-transition-property: width;
+                -webkit-transition-duration: 1s;
+                -webkit-transition-delay: initial;
+            }
+
+            .second{
+                width: 150px;
+                height: 150px;
+                background-color: lightblue;
+                transition: width 1s, height 2s, background-color 2s;
+                transition-delay: -2s;
+            }
+
+            .first:hover{
+                width: 300px;
+            }
+            .second:hover{
+                width: 250px;
+                height: 250px;
+                background-color: brown;
+            }
+                */
+
+                /*
+        div{
+            padding: 15px;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            transition: background-color 1s, width 2s, height 2s, transform 2s;
+            transition-delay: 1ms;
+        }
+        p{
+            font-size: 20px;
+        }
+        div:hover{
+            width: 300px;
+            height: 300px;
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            background-color: orange;
+        }
+            */
+
+            /*
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            -webkit-animation: myfirst 6s;
+            animation: myfirst 5s;
+        }
+        @-webkit-keyframes myfirst{
+            from{
+                background: red; background: yellow;
+            }
+            to {
+                background: green; background: blue;
+            }
+        }
+        @keyframes myfirst{
+            from{
+                background: red; background: yellow;
+            }
+            to {
+                background: green; background: blue;
+            }
+        }
+            */
+
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            -webkit-animation: myfirst .2s;
+            animation: myfirst .2s;
+        }
+
+        @-webkit-keyframes myfirst{
+            0% {background: red; left: 0px; top: 0px;}
+            25% {background: yellow; left: 300px; top: 0px;}
+            50% { background: blue; left: 200px; top: 300px;}
+            75% {background: green; left: 0px; top: 200px;}
+            100% {background: red; left: 0px; top: 0px;}
+        }
+
+        @keyframes myfirst{
+            0% {background: red; left: 0px; top: 0px;}
+            25% {background: yellow; left: 300px; top: 0px;}
+            50% { background: blue; left: 300px; top: 300px;}
+            75% {background: green; left: 0px; top: 300px;}
+            100% {background: red; left: 0px; top: 0px;}
+        }
+        </style>
+    </head>
+    <body>
+        <!---
+        <div></div>
+        <p>Move the cursor over thee div element above,to see the transition effect.</p>
+    -->
+
+<!---
+    <center>
+        <h2>Example of transition-delay property</h2>
+        <p>Move the cursor pover the div element, to see the transition effect.</p>
+        <div class="first">
+            <p>transition-delay:initial</p>
+        </div>
+
+        <div class="second">
+            <p>transiton-delay:-2s</p>
+        </div>
+    </center>
+-->
+
+<!--
+    <div>
+        <h2>study shinee.com</h2>
+        <p>(move your cursor on me to see the effect)</p>
+    </div>
+--->
+
+
+    <p><b>Note:</b> The IE9 and earlier versions dont't support CSS3 animation property</p>
+    <div></div>
+
+
+
+    </body>
+</html>
